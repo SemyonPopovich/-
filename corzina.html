@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <title>Корзина</title>
+</head>
+<body>
+    
+    <header>
+        <div class="container">
+            <div class="header-container">
+                <div class="logo">
+                    <a href="index.html">
+                        <img src="img/LOGO.png" alt="Логотип">
+                    </a>
+                </div>
+                <nav>
+                    <ul>
+                        <li><a href="category.html"><span>Категории</span> <i class="fas fa-list"></i></a></li>
+                        <!--<li><a href="zakazi.html"><span>Заказы</span> <i class="fas fa-shopping-cart"></i></a></li>-->
+                        <li><a href="#"><span>Корзина</span> <i class="fas fa-shopping-basket"></i></a></li>
+                        <li><a href="login.html"><span>Войти</span> <i class="fas fa-user"></i></a></li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+    </header>
+
+
+
+    <main>
+        <div class="container">
+            <div class="product-cards">
+                <div class="card">
+                        <img src="img/phone.png" alt="Товар 1">
+                        <h3>Смартфон Samsung Galaxy S21 Ultra</h3>
+                        <p>8/256Gb Gray Stone</p>
+                        <div class="card-icon">
+                            <div class="icon-img">
+                                <img src="img/cart.png" alt="">
+                            </div>
+                            <div class="card-img">
+                                <img src="img/favourite_icon.png" alt="">
+                            </div>
+                            <div class="card-img">
+                                <img src="img/diagram_graph.png" alt="">
+                            </div>
+                        </div>
+
+                        <div class="price">
+                            32 999 ₽ 
+                        </div>
+
+                        <div class="stars" id="stars1">
+                            <span class="star" onclick="changeStars('stars1', 1)">★</span>
+                            <span class="star" onclick="changeStars('stars1', 2)">★</span>
+                            <span class="star" onclick="changeStars('stars1', 3)">★</span>
+                            <span class="star" onclick="changeStars('stars1', 4)">★</span>
+                            <span class="star" onclick="changeStars('stars1', 5)">★</span>
+
+                            <div class="delete">
+                                <a href="#"><img src="img/trashcan.png" alt=""></a>
+                            </div>
+                        </div>
+                </div>
+
+                <div class="card">
+                    <img src="img/notebock.png" alt="Товар 1">
+                    <h3>Нутбук MSI Katana B12VFK-463XRU</h3>
+                    <p>i5-12450H 2ГГц, 16GbM SSD 512GB, RTX 4060</p>
+                    <div class="card-icon">
+                        <div class="icon-img">
+                            <img src="img/cart.png" alt="">
+                        </div>
+                        <div class="card-img">
+                            <img src="img/favourite_icon.png" alt="">
+                        </div>
+                        <div class="card-img">
+                            <img src="img/diagram_graph.png" alt="">
+                        </div>
+                    </div>
+                    
+                    <div class="price">
+                        62 999 ₽ 
+                    </div>
+
+                    <div class="stars" id="stars2">
+                        <span class="star" onclick="changeStars('stars2', 1)">★</span>
+                        <span class="star" onclick="changeStars('stars2', 2)">★</span>
+                        <span class="star" onclick="changeStars('stars2', 3)">★</span>
+                        <span class="star" onclick="changeStars('stars2', 4)">★</span>
+                        <span class="star" onclick="changeStars('stars2', 5)">★</span>
+
+                        <div class="delete">
+                            <a href="#"><img src="img/trashcan.png" alt=""></a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="card">
+                    <img src="img/tv.png" alt="Товар 1">
+                    <h3>Телевозор Xiaomi Mi TV A2 50 Черный</h3>
+                    <p>Direct LED, 4K UltraHD, DLNA</p>
+                    <div class="card-icon">
+                        <div class="icon-img">
+                            <img src="img/cart.png" alt="">
+                        </div>
+                        <div class="card-img">
+                            <img src="img/favourite_icon.png" alt="">
+                        </div>
+                        <div class="card-img">
+                            <img src="img/diagram_graph.png" alt="">
+                        </div>
+                    </div>
+                    
+                    <div class="price">
+                        42 999 ₽ 
+                    </div>
+
+                    <div class="stars" id="stars3">
+                        <span class="star" onclick="changeStars('stars3', 1)">★</span>
+                        <span class="star" onclick="changeStars('stars3', 2)">★</span>
+                        <span class="star" onclick="changeStars('stars3', 3)">★</span>
+                        <span class="star" onclick="changeStars('stars3', 4)">★</span>
+                        <span class="star" onclick="changeStars('stars3', 5)">★</span>
+
+                        <div class="delete">
+                            <a href="#"><img src="img/trashcan.png" alt=""></a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="card">
+                    <img src="img/planshet.png" alt="Товар 1">
+                    <h3>Планшет Xiaomi Redmi Pad SE WI-FI 128GB Gray</h3>
+                    <p>1920x1280, 8x2.4 ГГц, 6Gb</p>
+                    <div class="card-icon">
+                        <div class="icon-img">
+                            <img src="img/cart.png" alt="">
+                        </div>
+                        <div class="card-img">
+                            <img src="img/favourite_icon.png" alt="">
+                        </div>
+                        <div class="card-img">
+                            <img src="img/diagram_graph.png" alt="">
+                        </div>
+                    </div>
+                    
+                    <div class="price">
+                        28 999 ₽ <span></span>
+                    </div>
+
+                    <div class="stars" id="stars4">
+                        <span class="star" onclick="changeStars('stars4', 1)">★</span>
+                        <span class="star" onclick="changeStars('stars4', 2)">★</span>
+                        <span class="star" onclick="changeStars('stars4', 3)">★</span>
+                        <span class="star" onclick="changeStars('stars4', 4)">★</span>
+                        <span class="star" onclick="changeStars('stars4', 5)">★</span>
+
+                        <div class="delete">
+                            <a href="#"><img src="img/trashcan.png" alt=""></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <script src="script.js"></script>
+</body>
+</html>

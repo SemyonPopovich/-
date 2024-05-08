@@ -1,0 +1,241 @@
+/* Общие стили */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background-color: #333;
+    color: #fff;
+}
+
+.container {
+    max-width: 1200px; /* Установите максимальную ширину контейнера по вашему усмотрению */
+    margin: 0 auto;
+    padding: 20px; /* Добавьте внутренние отступы по вашему усмотрению */
+    align-items: center;    
+}
+
+.header-container{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.logo img {
+    max-width: 100px;
+    height: auto;
+}
+
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin-right: 20px;
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+nav ul li a span {
+    margin-right: 5px; /* Расстояние между текстом и иконкой */
+}
+
+nav ul li a:hover {
+    color: #ffd700; /* Измените цвет при наведении на ссылку по вашему вкусу */
+}
+
+/* Адаптивные стили для мобильных устройств */
+@media (max-width: 768px) {
+    .header-container {
+        flex-direction: column;
+        text-align: center;
+        padding-bottom: 10px;
+    }
+
+    .logo {
+        margin-bottom: 20px;
+    }
+
+    nav ul {
+        margin-top: 20px;
+    }
+
+    nav ul li {
+        display: block;
+        margin-bottom: 10px;
+    }
+
+    nav ul li:last-child {
+        margin-bottom: 0;
+    }
+}
+
+/* Адаптивные стили для широких разрешений */
+@media (min-width: 1200px) {
+    .container {
+        padding: 0 10px; /* Увеличиваем отступы по бокам */
+    }
+
+    nav ul li {
+        margin-right: 10px; /* Увеличиваем отступы между пунктами меню */
+    }
+}
+
+
+
+
+main {
+    background-color: #f9f9f9; /* Цвет фона для контента */
+    padding: 40px 0; /* Внутренние отступы для контента */
+}
+
+.popular-heading {
+    font-size: 36px;
+    margin-bottom: 30px;
+    color: #333;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    font-weight: bold;
+    margin-top: 0; /* Убираем отступ сверху */
+}
+
+
+/* Стили для карточек товаров */
+.product-cards {
+    margin-top: 40px; /* Добавляем отступ сверху */
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+
+.card {
+    width: calc(20% - 20px); /* Ширина карточки */
+    margin-bottom: 20px;
+    padding: 20px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+}
+
+a{
+    text-decoration: none;
+}
+
+.card img {
+    width: 100%;
+    border-radius: 5px;
+    margin-bottom: 10px;
+}
+
+.card h3 {
+    margin-top: 0;
+    text-align: center;
+    color: #000;
+}
+
+.price{
+    text-align: left;
+}
+
+.card p {
+    margin-bottom: 5px;
+    color: gray;
+    text-align: center;
+    font-weight: 700;
+}
+
+.price{
+    text-decoration: none;
+    color: #000;
+    font-size: 24px;
+    text-align: left;
+    padding: 10px;
+    display: flex;
+}
+
+.price>span{
+    padding-left: 10px;
+    color: #484848;
+}
+
+.card-icon{
+    display: flex;
+    justify-content: space-between;
+    padding: 5px;
+}
+.stars{
+    color: gold;
+    font-size: 24px;
+    display: flex;
+}
+
+.star{
+    display: flex;
+    width: 60%;
+}
+
+.star>span{
+    color: #000;
+    padding-top:3px ;
+}
+
+ .delete{
+    margin-top: 5px;
+    margin-left: 50px;
+ }
+
+@media (max-width: 768px) {
+    main {
+        padding: 10px; /* Уменьшаем отступы краям экрана для мобильных устройств */
+    }
+
+    .container {
+        padding: 0 10px; /* Уменьшаем отступы по бокам для мобильных устройств */
+    }
+
+    .card{
+    width: calc(40% - 20px); /* Ширина карточки */
+    margin:20px;
+    padding: 20px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    }
+
+    .price{
+        font-size: 20px;
+    }
+
+    .product-cards{
+        justify-content: center;
+    }
+
+    .popular-heading {
+        text-align: center;
+        font-size: 28px;
+        margin-bottom: 30px;
+        margin-top: 30px;
+        color: #333;
+        text-transform: uppercase;
+        letter-spacing: 2px;
+        font-weight: bold;
+        margin-top: 0; /* Убираем отступ сверху */
+    }
+}   
+
+
+@media(min-width: 1200px) {
+    .container {
+        padding: 0 40px; /* Увеличиваем отступы по бокам */
+    }
+
+    
+}
