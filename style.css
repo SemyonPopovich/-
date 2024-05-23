@@ -91,7 +91,27 @@ nav ul li a:hover {
 }
 
 
+.clearShoppingCart {
+    border: none;
+    border-radius: 0 10px 0 10px;
 
+    color: white;
+    padding: 10px;
+    font-weight: bold;
+    background-color: #ff7426;
+    transition: 0.5s ease;
+
+    float: right;
+
+    margin-bottom: 15px;
+
+    display: none;
+}
+
+.clearShoppingCart:hover {
+    transform: scale(1.5);
+    transition: 0.5s ease;
+}
 
 main {
     background-color: #f9f9f9; /* Цвет фона для контента */
@@ -124,6 +144,10 @@ main {
     padding: 20px;
     border: 1px solid #ddd;
     border-radius: 5px;
+}
+
+.card:hover {
+    cursor: pointer;
 }
 
 a{
